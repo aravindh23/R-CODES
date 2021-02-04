@@ -1,0 +1,7 @@
+buy<-read.csv(file.choose())
+View(buy)
+attach(buy)
+table(Observed.Values,East)
+chisq.test(table(Observed.Values,East))
+table(East,West)
+chisq.test(table(East,West))
